@@ -12,71 +12,65 @@ function Login() {
   const [passwordError, setPasswordError] = useState("");
   const [serverError, setServerError] = useState("");
 
- const handleSubmit = async (event) => {
-   event.preventDefault();
+  // Handle form submission
+  const handleSubmit = async (event) => {
+    event.preventDefault();
 
-   // Client-side validation
-   let valid = true;
-   if (!employee_email) {
-     setEmailError("Please enter your email address first");
-     valid = false;
-   } else if (
-     !employee_email.includes("@") ||
-     !/^\S+@\S+\.\S+$/.test(employee_email)
-   ) {
-     setEmailError("Invalid email format");
-     valid = false;
-   } else {
-     setEmailError("");
-   }
+    // Client-side validation
+    let valid = true;
+    if (!employee_email) {
+      setEmailError("Please enter your email address first");
+      valid = false;
+    } else if (!/^\S+@\S+\.\S+$/.test(employee_email)) {
+      setEmailError("Invalid email format");
+      valid = false;
+    } else {
+      setEmailError("");
+    }
 
-   if (!employee_password || employee_password.length < 6) {
-     setPasswordError("Password must be at least 6 characters long");
-     valid = false;
-   } else {
-     setPasswordError("");
-   }
+    if (!employee_password || employee_password.length < 6) {
+      setPasswordError("Password must be at least 6 characters long");
+      valid = false;
+    } else {
+      setPasswordError("");
+    }
 
-   if (!valid) return;
+    if (!valid) return; // Do not proceed if validation fails
 
-   const formData = {
-     employee_email,
-     employee_password,
-   };
-   console.log("Sending form data:", formData);
+    const formData = {
+      employee_email,
+      employee_password,
+    };
 
-   try {
-     // Awaiting the response from the login service
-     const response = await loginService.logIn(formData);
+    try {
+      // Awaiting the response from the login service
+      const response = await loginService.logIn(formData);
 
-     // Check if response is OK (status in range 200-299)
-     if (!response.ok) {
-       throw new Error(`HTTP error! status: ${response.status}`);
-     }
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
 
-     // Parse the JSON response
-     const result = await response.json();
-     console.log("Parsed response:", result);
+      // Parse the JSON response
+      const result = await response.json();
 
-     if (result.status === "success") {
-       if (result.data && result.data.employee_token) {
-         localStorage.setItem("employee", JSON.stringify(result.data));
-       }
+      if (result.status === "success") {
+        if (result.data && result.data.employee_token) {
+          // Save token to localStorage
+          localStorage.setItem("employee", JSON.stringify(result.data));
+        }
 
-       window.location.replace(
-         location.pathname === "/login" ? "/" : location.pathname
-       );
-     } else {
-       console.log("Error from backend:", result.message);
-       setServerError(result.message || "Unknown error occurred.");
-     }
-   } catch (error) {
-     console.error("Fetch error:", error);
-     setServerError("An error has occurred. Please try again later.");
-   }
- };
-
-
+        // Redirect to the previous page or homepage
+        const redirectPath =
+          location.pathname === "/login" ? "/" : location.pathname;
+        navigate(redirectPath);
+      } else {
+        setServerError(result.message || "Unknown error occurred.");
+      }
+    } catch (error) {
+      console.error("Error occurred during login:", error);
+      setServerError("An error has occurred. Please try again later.");
+    }
+  };
 
   return (
     <Layout>
@@ -101,7 +95,7 @@ function Login() {
                           type="email"
                           name="employee_email"
                           value={employee_email}
-                          onChange={(event) => setEmail(event.target.value)}
+                          onChange={(e) => setEmail(e.target.value)}
                           placeholder="Email"
                         />
                         {emailError && (
@@ -116,7 +110,7 @@ function Login() {
                           type="password"
                           name="employee_password"
                           value={employee_password}
-                          onChange={(event) => setPassword(event.target.value)}
+                          onChange={(e) => setPassword(e.target.value)}
                           placeholder="Password"
                         />
                         {passwordError && (
@@ -148,46 +142,3 @@ function Login() {
 }
 
 export default Login;
-
-
-
-// import React, { useState } from 'react';
-// import { useHistory } from 'react-router-dom';
-
-// const LoginPage = () => {
-//   const [username, setUsername] = useState('');
-//   const [password, setPassword] = useState('');
-//   const history = useHistory();
-
-//   const handleLogin = () => {
-//     // Example authentication - in real life, you would call an API here
-//     if (username === 'user' && password === 'password') {
-//       const token = 'sample-auth-token'; // You would get this from an API
-//       localStorage.setItem('authToken', token); // Save token to localStorage
-//       history.push('/');  // Redirect to the home page
-//     } else {
-//       alert('Invalid credentials');
-//     }
-//   };
-
-//   return (
-//     <div>
-//       <h2>Login</h2>
-//       <input 
-//         type="text" 
-//         placeholder="Username" 
-//         value={username} 
-//         onChange={(e) => setUsername(e.target.value)} 
-//       />
-//       <input 
-//         type="password" 
-//         placeholder="Password" 
-//         value={password} 
-//         onChange={(e) => setPassword(e.target.value)} 
-//       />
-//       <button onClick={handleLogin}>Login</button>
-//     </div>
-//   );
-// };
-
-// export default LoginPage;

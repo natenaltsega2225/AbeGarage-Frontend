@@ -119,3 +119,27 @@ function Header() {
 }
 
 export default Header
+
+
+
+// import React from 'react';
+
+// const Header = ({ isLoggedIn, onLogout }) => {
+//   return (
+//     <header>
+//       <div className="logo">My App</div>
+      
+//       {/* Conditional rendering based on the login status */}
+//       {isLoggedIn ? (
+//         <div>
+//           <span>Welcome, User!</span>
+//           <button onClick={onLogout}>Logout</button>
+//         </div>
+//       ) : (
+//         <button onClick={() => window.location.href = '/login'}>Login</button>
+//       )}
+//     </header>
+//   );
+// };
+
+// export default Header;

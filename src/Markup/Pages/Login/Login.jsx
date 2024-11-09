@@ -148,3 +148,46 @@ function Login() {
 }
 
 export default Login;
+
+
+
+// import React, { useState } from 'react';
+// import { useHistory } from 'react-router-dom';
+
+// const LoginPage = () => {
+//   const [username, setUsername] = useState('');
+//   const [password, setPassword] = useState('');
+//   const history = useHistory();
+
+//   const handleLogin = () => {
+//     // Example authentication - in real life, you would call an API here
+//     if (username === 'user' && password === 'password') {
+//       const token = 'sample-auth-token'; // You would get this from an API
+//       localStorage.setItem('authToken', token); // Save token to localStorage
+//       history.push('/');  // Redirect to the home page
+//     } else {
+//       alert('Invalid credentials');
+//     }
+//   };
+
+//   return (
+//     <div>
+//       <h2>Login</h2>
+//       <input 
+//         type="text" 
+//         placeholder="Username" 
+//         value={username} 
+//         onChange={(e) => setUsername(e.target.value)} 
+//       />
+//       <input 
+//         type="password" 
+//         placeholder="Password" 
+//         value={password} 
+//         onChange={(e) => setPassword(e.target.value)} 
+//       />
+//       <button onClick={handleLogin}>Login</button>
+//     </div>
+//   );
+// };
+
+// export default LoginPage;

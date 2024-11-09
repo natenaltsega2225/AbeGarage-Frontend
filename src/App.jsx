@@ -24,3 +24,36 @@ function App() {
 }
 
 export default App;
+
+// import React, { useState, useEffect } from 'react';
+// import { useHistory } from 'react-router-dom';  // Assuming you're using React Router for navigation
+// import Header from './Header';
+
+// const App = () => {
+//   const [isLoggedIn, setIsLoggedIn] = useState(false);
+//   const history = useHistory();
+
+//   // Check if the token is present in localStorage when the app loads
+//   useEffect(() => {
+//     const token = localStorage.getItem('authToken');
+//     setIsLoggedIn(!!token); // Set true if token exists, false otherwise
+//   }, []);
+
+//   const handleLogout = () => {
+//     // Remove the authentication token
+//     localStorage.removeItem('authToken');
+//     setIsLoggedIn(false);
+    
+//     // Redirect to login page or default page
+//     history.push('/login');
+//   };
+
+//   return (
+//     <div>
+//       <Header isLoggedIn={isLoggedIn} onLogout={handleLogout} />
+//       {/* Other components here */}
+//     </div>
+//   );
+// };
+
+// export default App;

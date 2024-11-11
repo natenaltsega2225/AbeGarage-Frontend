@@ -12,7 +12,6 @@ function Login() {
   const [passwordError, setPasswordError] = useState("");
   const [serverError, setServerError] = useState("");
 
-  // Handle form submission
   const handleSubmit = async (event) => {
     event.preventDefault();
 
@@ -21,7 +20,10 @@ function Login() {
     if (!employee_email) {
       setEmailError("Please enter your email address first");
       valid = false;
-    } else if (!/^\S+@\S+\.\S+$/.test(employee_email)) {
+    } else if (
+      !employee_email.includes("@") ||
+      !/^\S+@\S+\.\S+$/.test(employee_email)
+    ) {
       setEmailError("Invalid email format");
       valid = false;
     } else {
@@ -35,39 +37,41 @@ function Login() {
       setPasswordError("");
     }
 
-    if (!valid) return; // Do not proceed if validation fails
+    if (!valid) return;
 
     const formData = {
       employee_email,
       employee_password,
     };
+    console.log("Sending form data:", formData);
 
     try {
       // Awaiting the response from the login service
       const response = await loginService.logIn(formData);
 
+      // Check if response is OK (status in range 200-299)
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
       // Parse the JSON response
       const result = await response.json();
+      console.log("Parsed response:", result);
 
       if (result.status === "success") {
         if (result.data && result.data.employee_token) {
-          // Save token to localStorage
           localStorage.setItem("employee", JSON.stringify(result.data));
         }
 
-        // Redirect to the previous page or homepage
-        const redirectPath =
-          location.pathname === "/login" ? "/" : location.pathname;
-        navigate(redirectPath);
+        window.location.replace(
+          location.pathname === "/login" ? "/" : location.pathname
+        );
       } else {
+        console.log("Error from backend:", result.message);
         setServerError(result.message || "Unknown error occurred.");
       }
     } catch (error) {
-      console.error("Error occurred during login:", error);
+      console.error("Fetch error:", error);
       setServerError("An error has occurred. Please try again later.");
     }
   };
@@ -95,7 +99,7 @@ function Login() {
                           type="email"
                           name="employee_email"
                           value={employee_email}
-                          onChange={(e) => setEmail(e.target.value)}
+                          onChange={(event) => setEmail(event.target.value)}
                           placeholder="Email"
                         />
                         {emailError && (
@@ -110,7 +114,7 @@ function Login() {
                           type="password"
                           name="employee_password"
                           value={employee_password}
-                          onChange={(e) => setPassword(e.target.value)}
+                          onChange={(event) => setPassword(event.target.value)}
                           placeholder="Password"
                         />
                         {passwordError && (

@@ -8,6 +8,7 @@ const logIn = async (formData) => {
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(formData),
   };
+<<<<<<< HEAD
 
   console.log("About to send request:", requestOptions);
 
@@ -17,6 +18,14 @@ const logIn = async (formData) => {
       requestOptions
     );
     console.log("Raw response:", response); // Log the raw response object
+=======
+  
+  console.log("About to send request:", requestOptions);
+
+  try {
+    const response = await fetch(`${api_url}/api/employee/login`, requestOptions);
+    console.log("Raw response:", response);  // Log the raw response object
+>>>>>>> origin/main
 
     // Check if the response is okay
     if (!response.ok) {
@@ -27,10 +36,18 @@ const logIn = async (formData) => {
     return response; // Return the response for further processing
   } catch (error) {
     console.error("Error in logIn function:", error);
+<<<<<<< HEAD
     throw error; // Propagate the error to the calling function
   }
 };
 
+=======
+    throw error;  // Propagate the error to the calling function
+  }
+};
+
+
+>>>>>>> origin/main
 // A function to log out the user
 const logOut = () => {
   localStorage.removeItem("employee");

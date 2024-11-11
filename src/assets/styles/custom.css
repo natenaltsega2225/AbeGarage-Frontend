@@ -1,0 +1,321 @@
+/* Custom styles for the garage app */
+.signin-signout {
+  padding: 0 55px;
+}
+
+.signin-signout a {
+  color: #fff;
+}
+
+/* Placeholder style */
+input::placeholder,
+textarea::placeholder {
+  font-weight: 400;
+  opacity: 0.3;
+  color: #000;
+  font-style: italic;
+}
+
+/* Header */
+.main-header {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 2px 5px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+/* Admin pages */
+.admin-left-side {
+  background-color: #222b48;
+  height: 790px;
+  margin: 0 -10px;
+}
+
+.admin-right-side {
+  background: rgb(246 247 250);
+  border-bottom: 1px solid #dfe2ec;
+}
+
+.admin-menu {
+  background: #1e2331;
+  padding: 10px 20px;
+}
+
+.admin-left-side .list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #3c404c;
+  border-color: #3c404c;
+  border-bottom: 1px solid #616675;
+}
+
+.admin-menu h2 {
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 50px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgb(249, 249, 249);
+  display: block;
+  text-decoration: none;
+}
+
+.admin-left-side.col-md-3 {
+  padding: 0;
+}
+
+.admin-left-side .list-group-item {
+  background-color: #222b48;
+  border-bottom: 1px solid #616675;
+  margin-bottom: 0px;
+  color: #fff;
+}
+
+.admin-left-side a {
+  color: #a2a5ad;
+}
+
+.admin-left-side a:hover {
+  color: #fff;
+}
+
+.validation-error {
+  color: red;
+  float: right;
+  font-style: italic;
+}
+
+select.custom-select-box {
+  border-right: 25px solid #dddddd;
+}
+
+.edit-delete-icons a {
+  color: #0a1436;
+  padding: 0 10px;
+}
+
+input:disabled {
+  background-color: #ecedef !important;
+}
+
+.checkbox-in-form .form-check-label {
+  padding-left: 15px;
+  font-size: 1.3em;
+  font-weight: 300;
+  vertical-align: super;
+}
+
+.checkbox-in-form input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.form-bold-header {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+/* Pagination */
+.pagination-wrapper {
+  margin-top: 30px;
+}
+
+.page-link {
+  padding: 0.5rem 1.75rem;
+  color: #fff;
+  background-color: #222b48;
+  border: 1px solid #dee2e6;
+}
+
+.page-link:hover {
+  color: #ffffff;
+  background-color: #ee0c0a;
+}
+
+.page-link span {
+  padding: 0 5px;
+}
+
+/* Search */
+.search-box {
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  padding: 30px;
+}
+
+/* Table style */
+.table a {
+  color: #0a1436;
+  font-weight: 600;
+}
+
+/* Customer page */
+.history-block .text span {
+  font-weight: 600;
+  color: #000821;
+}
+
+/* Vehicles */
+.external-container {
+  padding: 50px;
+  background-color: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.contact-section .external-container .contact-title h2 {
+  font-size: 30px;
+}
+
+.external-container .contact-form .theme-btn span {
+  color: #fff;
+}
+
+.form-close {
+  color: red;
+  font-size: 1.5em;
+  margin-bottom: -3px;
+  text-align: end;
+  cursor: pointer;
+}
+
+.internal-form-wrapper {
+  width: 80%;
+}
+
+.vehicles-wrapper {
+  padding: 0px;
+  background: #fff;
+  margin-bottom: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.inner-padding {
+  padding: 20px;
+}
+
+/* Services */
+.services-wrapper {
+  margin-bottom: 20px;
+}
+
+.service-item {
+  background: #fff;
+  padding: 20px 20px 5px;
+  margin-bottom: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.service-item .edit-delete {
+  float: right;
+  padding: 0 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.service-item .edit-delete span {
+  padding: 15px;
+}
+
+.service-item h3 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+/* Order page */
+.faq-section.order-page .sear-form {
+  position: relative;
+  margin-bottom: 0px;
+}
+
+.order-page .search-box {
+  margin-bottom: 0px;
+}
+
+.filter-customers-wrapper {
+  padding: 20px;
+  background: #f8f8f8;
+  border: 1px solid #ced4da;
+  border-top: 0;
+}
+
+.selected-customer {
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ced4da;
+  border-top: 0;
+  margin-bottom: 20px;
+}
+
+.selected-customer h3 {
+  font-weight: 600;
+}
+
+.vehicles-to-choose {
+  margin-top: 40px;
+}
+
+.service-item.checkbox-holder {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 2px 5px;
+}
+
+.checkbox-holder input[type="checkbox"] {
+  width: 40px;
+  height: 40px;
+}
+
+.theme-btn a {
+  color: #fff;
+}
+
+.no-customer {
+  margin-top: 20px;
+}
+
+.selected-customer .sec-title {
+  margin-bottom: 25px;
+}
+
+.selected-customer .form-close {
+  float: right;
+}
+
+.selected-customer .text span {
+  color: #000821;
+}
+
+.service-block-one .text span {
+  color: #000821;
+}
+
+.contact-form input[type="number"] {
+  display: block;
+  width: 100%;
+  line-height: 28px;
+  height: 56px;
+  font-size: 16px;
+  padding: 10px 22px;
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #dddddd;
+  transition: all 500ms ease;
+  -webkit-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+}
+
+.single-order .service-block-one h2 {
+  margin-bottom: 20px;
+}
+
+.order-status {
+  float: right;
+}
+
+.order-status span {
+  padding: 10px 25px;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.change-status {
+  cursor: pointer;
+}

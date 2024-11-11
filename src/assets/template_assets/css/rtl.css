@@ -1,0 +1,28 @@
+
+/* RTL Css */
+
+
+.rtl {
+	direction: rtl;
+	text-align: right;
+}
+
+.rtl .owl-carousel {
+	direction: ltr;
+}
+
+.rtl .banner-section .banner-slider-nav {
+    direction: ltr;
+}
+
+
+
+
+
+
+
+
+
+
+
+

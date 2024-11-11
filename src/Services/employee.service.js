@@ -18,4 +18,8 @@ const createEmployee = async (formData, loggedInEmployeeToken) => {
 const employeeService = {
   createEmployee,
 };
+<<<<<<< HEAD
 export default employeeService;
+=======
+export default employeeService;
+>>>>>>> origin/main

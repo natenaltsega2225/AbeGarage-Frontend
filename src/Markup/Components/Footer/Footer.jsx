@@ -29,7 +29,7 @@ function Footer() {
                                         <span class="flaticon-email"></span>
                                     </div>
                                     <div class="text">Email us : <br/> <a
-                                            href="mailto:contact.contact@autorex.com">contact@autorex.com</a></div>
+                                            href="mailto:contact.contact@autorex.com">contact@abegarage.com</a></div>
                                 </div>
                             </div>
                         </div>
@@ -135,7 +135,7 @@ function Footer() {
           
             <div class="auto-container">
                 <div class="footer-bottom">
-                    <div class="copyright-text">© Copyright <a href="#">Autorex</a> 2020 . All right reserved.</div>
+                    <div class="copyright-text">© Copyright <a href="#">Group 3</a> 2024. All right reserved.</div>
                     <div class="text">Created by <a href="#">ThemeArc</a></div>
                 </div>
             </div>

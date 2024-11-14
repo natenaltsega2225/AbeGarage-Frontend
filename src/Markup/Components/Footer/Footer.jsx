@@ -8,6 +8,8 @@ function Footer() {
             <div className="upper-box">
                 <div className="auto-container">
                     <div className="row no-gutters">
+
+                        
                         <div className="footer-info-box col-md-4 col-sm-6 col-xs-12">
                             <div className="info-inner">
                                 <div className="content">
@@ -27,7 +29,7 @@ function Footer() {
                                         <span className="flaticon-email"></span>
                                     </div>
                                     <div className="text">Email us : <br/> <a
-                                            href="mailto:contact.contact@autorex.com">contact@autorex.com</a></div>
+                                            href="mailto:contact.contact@autorex.com">contact@abegarage.com</a></div>
                                 </div>
                             </div>
                         </div>
@@ -112,7 +114,7 @@ function Footer() {
                                                     id="subscription-email"/>
                                                 <button className="theme-btn" type="submit"><span
                                                         className="fas fa-paper-plane"></span></button>
-                                                <label className="subscription-label" htmlFor="subscription-email"></label>
+                                                <label className="subscription-label" for="subscription-email"></label>
                                             </div>
                                         </form>
                                     </div>
@@ -133,7 +135,7 @@ function Footer() {
           
             <div className="auto-container">
                 <div className="footer-bottom">
-                    <div className="copyright-text">© Copyright <a href="#">Autorex</a> 2020 . All right reserved.</div>
+                    <div className="copyright-text">© Copyright <a href="#">Group 3</a> 2024. All right reserved.</div>
                     <div className="text">Created by <a href="#">ThemeArc</a></div>
                 </div>
             </div>

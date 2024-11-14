@@ -1,9 +1,13 @@
 import React from "react";
 import vban1 from "../../../assets/images/Custom/misc/vban1.jpg";
 import vban2 from "../../../assets/images/Custom/misc/vban2.jpg";
+
+
+
 const About24 = () => {
   return (
-    <section className="about-section">
+    <>
+       <section className="about-section">
       <div className="auto-container">
         <div className="row">
           <div className="col-lg-5">
@@ -48,6 +52,9 @@ const About24 = () => {
         </div>
       </div>
     </section>
+    
+
+    </>
   );
 };
 

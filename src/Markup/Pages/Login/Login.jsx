@@ -12,71 +12,69 @@ function Login() {
   const [passwordError, setPasswordError] = useState("");
   const [serverError, setServerError] = useState("");
 
- const handleSubmit = async (event) => {
-   event.preventDefault();
+  const handleSubmit = async (event) => {
+    event.preventDefault();
 
-   // Client-side validation
-   let valid = true;
-   if (!employee_email) {
-     setEmailError("Please enter your email address first");
-     valid = false;
-   } else if (
-     !employee_email.includes("@") ||
-     !/^\S+@\S+\.\S+$/.test(employee_email)
-   ) {
-     setEmailError("Invalid email format");
-     valid = false;
-   } else {
-     setEmailError("");
-   }
+    // Client-side validation
+    let valid = true;
+    if (!employee_email) {
+      setEmailError("Please enter your email address first");
+      valid = false;
+    } else if (
+      !employee_email.includes("@") ||
+      !/^\S+@\S+\.\S+$/.test(employee_email)
+    ) {
+      setEmailError("Invalid email format");
+      valid = false;
+    } else {
+      setEmailError("");
+    }
 
-   if (!employee_password || employee_password.length < 6) {
-     setPasswordError("Password must be at least 6 characters long");
-     valid = false;
-   } else {
-     setPasswordError("");
-   }
+    if (!employee_password || employee_password.length < 6) {
+      setPasswordError("Password must be at least 6 characters long");
+      valid = false;
+    } else {
+      setPasswordError("");
+    }
 
-   if (!valid) return;
+    if (!valid) return;
 
-   const formData = {
-     employee_email,
-     employee_password,
-   };
-   console.log("Sending form data:", formData);
+    const formData = {
+      employee_email,
+      employee_password,
+    };
+    console.log("Sending form data:", formData);
 
-   try {
-     // Awaiting the response from the login service
-     const response = await loginService.logIn(formData);
+    try {
+      // Awaiting the response from the login service
+      const response = await loginService.logIn(formData);
 
-     // Check if response is OK (status in range 200-299)
-     if (!response.ok) {
-       throw new Error(`HTTP error! status: ${response.status}`);
-     }
+      // Check if response is OK (status in range 200-299)
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
 
-     // Parse the JSON response
-     const result = await response.json();
-     console.log("Parsed response:", result);
+      // Parse the JSON response
+      const result = await response.json();
+      console.log("Parsed response:", result);
 
-     if (result.status === "success") {
-       if (result.data && result.data.employee_token) {
-         localStorage.setItem("employee", JSON.stringify(result.data));
-       }
+      if (result.status === "success") {
+        if (result.data && result.data.employee_token) {
+          localStorage.setItem("employee", JSON.stringify(result.data));
+        }
 
-       window.location.replace(
-         location.pathname === "/login" ? "/" : location.pathname
-       );
-     } else {
-       console.log("Error from backend:", result.message);
-       setServerError(result.message || "Unknown error occurred.");
-     }
-   } catch (error) {
-     console.error("Fetch error:", error);
-     setServerError("An error has occurred. Please try again later.");
-   }
- };
-
-
+        window.location.replace(
+          location.pathname === "/login" ? "/" : location.pathname
+        );
+      } else {
+        console.log("Error from backend:", result.message);
+        setServerError(result.message || "Unknown error occurred.");
+      }
+    } catch (error) {
+      console.error("Fetch error:", error);
+      setServerError("An error has occurred. Please try again later.");
+    }
+  };
 
   return (
     <Layout>

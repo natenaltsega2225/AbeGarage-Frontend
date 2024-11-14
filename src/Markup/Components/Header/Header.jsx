@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import classes from "./Header.module.css";
 import logo from "../../../assets/images/logo.png";
+import Login from "../../Pages/Login/Login";
 
 const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [username, setUsername] = useState("MiskerAmesalu"); 
-  const navigate = useNavigate();
+  const [username, setUsername] = useState("MiskerAmesalu");
+  const navigate = useNavigate(); // Corrected way to get the navigate function
+
   // Check if the user is logged in on component mount
   useEffect(() => {
     const token = localStorage.getItem("authToken");
@@ -21,7 +23,7 @@ const Header = () => {
     localStorage.setItem("authToken", "sample_token");
     localStorage.setItem("username", username); // Store the username in localStorage
     setIsLoggedIn(true);
-    navigate.push("/"); // Redirect to the home page after login
+    navigate("/"); // Correct way to navigate to home page
   };
 
   const handleLogout = () => {
@@ -29,7 +31,7 @@ const Header = () => {
     localStorage.removeItem("authToken");
     localStorage.removeItem("username");
     setIsLoggedIn(false);
-    navigate.push("/login"); // Redirect to the login page
+    navigate("/login"); // Correct way to navigate to login page
   };
 
   return (

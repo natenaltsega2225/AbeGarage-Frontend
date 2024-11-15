@@ -11,6 +11,8 @@ import "./assets/template_assets/css/responsive.css";
 import "./assets/template_assets/css/color.css";
 //Import the custom css
 import "./assets/styles/custom.css";
+import PrivateAuthRoute from "./Markup/Components/Auth/PrivateAuthRoute";
+import Unauthorized from "./Markup/Pages/Unauthorized";
 function App() {
   return (
     <>
@@ -18,9 +20,12 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About/>} />
         <Route path="/login" element={<Login />} />
+        <Route path="/unauthorized" element={<Unauthorized/>} />
         <Route path="/add-employee" element={
-          // <PrivateAuthRoute roles={["3"]}>
-            <Employee />} />
+         <PrivateAuthRoute roles={[3]}>
+          <Employee />
+          </PrivateAuthRoute>}
+        />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
     </>

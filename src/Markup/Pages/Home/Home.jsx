@@ -6,11 +6,14 @@ import FeaturesSec from "../../Components/FeaturesSec/FeturesSec";
 import WhyChooseUs from "../../Components/WhyChoosUs/WhyChooseUs";
 import BottomBanner from "../../Components/Banner/BottomBanner";
 import CtaSec from "../../Components/CtaSec/CtaSec";
+import Layout from "../../Pages/Layout/Layout"
 
 
 
 const Home = () => {
   return (
+    <Layout>
+    
     <div className="page-wrapper">
       {/* Video Section */}
       <TopBannerHome />
@@ -27,6 +30,7 @@ const Home = () => {
       {/* CTA Section */}
       <CtaSec />
     </div>
+    </Layout>
   );
 };
 

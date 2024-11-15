@@ -18,7 +18,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About/>} />
         <Route path="/login" element={<Login />} />
-        <Route path="/add-employee" element={<Employee />} />
+        <Route path="/add-employee" element={
+          // <PrivateAuthRoute roles={["3"]}>
+            <Employee />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
     </>

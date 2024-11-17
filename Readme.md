@@ -1,44 +1,23 @@
-# Frontend Sprint Two Tasks for AbeGarage
+Task ID: EAGP-FE-013
+Task Title: Implement Admin Dashboard Page
+Description: Develop the Admin Dashboard component to display key functionalities and data such as order status, employee management, and service highlights.
+Time Frame: 2 days
+Assignees: Biruk, Edo, Wende
 
-## Task ID: EAGP-FE-008
-**Task Title:** Implement Client-Side Authorization Using Protected Routes in React  
-**Description:**  
-Implement an authorization system on the client side using React's routing system. This system should control access to specific routes based on user roles. Use a “Protected Routes” approach, creating a custom component to check the user’s authentication status and role before rendering certain routes.  
-**Time Frame:** 1 day  
-**Assignees:** Abela, Bereket, Semira  
+Task ID: EAGP-FE-014
+Task Title: Implement Employees List
+Description: Create a React component to display a list of employees in a table format, including functionalities for editing and deleting records.
+Time Frame: 3 days
+Assignees: Hanna, Abela,Belay
 
----
+Task ID: EAGP-FE-015
+Task Title: Implement Employee Update
+Description: Build a React feature to allow editing employee details, including name, role, and active status, with form validation and API integration.
+Time Frame: 3 days
+Assignees: Nati, Eleni, Liyuwork
 
-## Task ID: EAGP-FE-009
-**Task Title:** Global State Management with Context API  
-**Description:**  
-Implement a global state management solution using React Context API to allow consistent state sharing across components, reducing redundancy and improving maintainability. Ensure it is scalable and integrates seamlessly with the current tech stack.  
-**Time Frame:** 1 - 2 days  
-**Assignees:** Gash Dawit, Misgana  
-
----
-
-## Task ID: EAGP-FE-010
-**Task Title:** User Authentication and Conditional Rendering  
-**Description:**  
-Implement conditional rendering for elements like welcome messages and login/logout buttons based on the user’s authentication status. Add logout functionality by removing the user’s token from local storage and updating the UI accordingly.  
-**Time Frame:** 2 days  
-**Assignees:** Misikir, Eyoba  
-
----
-
-## Task ID: EAGP-FE-011
-**Task Title:** Implement About Us Page  
-**Description:**  
-Develop the About Us page according to the provided design, ensuring full responsiveness. Include all sections such as the main banner, introduction, experience, and benefits.  
-**Time Frame:** 2 days  
-**Assignees:** Nati, Sumeya  
-
----
-
-## Task ID: EAGP-FE-012
-**Task Title:** Implement Contact Us Page  
-**Description:**  
-Create the Contact Us page to display the garage's address, phone number, email, and an interactive map showing the location. Include a contact form styled according to the design reference.  
-**Time Frame:** 2 days  
-**Assignees:** Selam Tessera, Betelhem  
+Task ID: EAGP-FE-016
+Task Title: Implement New Order Landing Page
+Description: Develop a New Order page with a search bar to locate customers by name, email, or phone, and an option to add new customers.
+Time Frame: 3 days
+Assignees: Tolera, Kedir, Ansar

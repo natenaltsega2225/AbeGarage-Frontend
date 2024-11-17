@@ -5,9 +5,9 @@ import Sidebar from '../../../Components/Admin/SideBar/Sidebar';
 function Employee() {
   return (
     <Layout>
-      <div className="container-fluid">
+      <div className="container-fluid admin-pages">
         <div className="row">
-          <div className="col-md-3">
+          <div className="col-md-3 admin-left-side">
             <Sidebar />
           </div>
           <div className="col-md-9">

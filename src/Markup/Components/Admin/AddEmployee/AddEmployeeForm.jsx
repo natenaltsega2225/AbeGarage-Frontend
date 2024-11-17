@@ -3,7 +3,7 @@ import "../../../../assets/template_assets/css/style.css";
 // import employee.service.js
 import employeeService from "../../../../Services/employee.service";
 // // Import the useAuth hook
-// import { useAuth } from "../../../../Contexts/AuthContext";
+import { useAuth } from "../../../../Contexts/AuthContext";
 
 function AddEmployeeForm(props) {
   const [employee_email, setEmail] = useState("");
@@ -12,8 +12,7 @@ function AddEmployeeForm(props) {
   const [employee_phone, setPhoneNumber] = useState("");
   const [employee_password, setPassword] = useState("");
   const [active_employee, setActive_employee] = useState(1);
-  const [company_role_id, setCompany_role_id] = useState(1);
-  // Errors
+  const [employee_role, setEmployee_role_id] = useState(1);
   const [emailError, setEmailError] = useState("");
   const [firstNameRequired, setFirstNameRequired] = useState("");
   const [passwordError, setPasswordError] = useState("");
@@ -21,12 +20,12 @@ function AddEmployeeForm(props) {
   const [serverError, setServerError] = useState("");
 
   // Create a variable to hold the user's token
-  //   let loggedInEmployeeToken = "";
-  //   // Destructure the auth hook and get the token
-  //   const { employee } = useAuth();
-  //   if (employee && employee.employee_token) {
-  //     loggedInEmployeeToken = employee.employee_token;
-  //   }
+    let loggedInEmployeeToken = "";
+    // Destructure the auth hook and get the token
+    const { employee } = useAuth();
+    if (employee && employee.employee_token) {
+      loggedInEmployeeToken = employee.employee_token;
+    }
 
   const handleSubmit = (e) => {
     // Prevent the default behavior of the form
@@ -73,20 +72,20 @@ function AddEmployeeForm(props) {
       employee_phone,
       employee_password,
       active_employee,
-      company_role_id,
+      employee_role,
     };
     // Pass the form data to the service
     const newEmployee = employeeService.createEmployee(
       formData
-      // ,loggedInEmployeeToken
+      ,loggedInEmployeeToken
     );
     newEmployee
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
         // If Error is returned from the API server, set the error message
-        if (data.error) {
-          setServerError(data.error);
+        if (data.error || data.errors) {
+          setServerError(data.error || data.errors);
         } else {
           // Handle successful response
           setSuccess(true);
@@ -95,7 +94,7 @@ function AddEmployeeForm(props) {
           // For now, just redirect to the home page
           setTimeout(() => {
             // window.location.href = '/admin/employees';
-            window.location.href = "/";
+            window.location.href= "/";
           }, 2000);
         }
       })
@@ -182,9 +181,9 @@ function AddEmployeeForm(props) {
                     <div className="form-group col-md-12">
                       <select
                         name="employee_role"
-                        value={company_role_id}
+                        value={employee_role}
                         onChange={(event) =>
-                          setCompany_role_id(event.target.value)
+                          setEmployee_role_id(event.target.value)
                         }
                         className="custom-select-box"
                       >

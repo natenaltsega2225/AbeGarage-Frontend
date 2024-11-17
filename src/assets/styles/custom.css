@@ -18,8 +18,7 @@ textarea::placeholder {
 
 /* Header */
 .main-header {
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 2px 5px -2px,
-    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 2px 5px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
 /* Admin pages */
@@ -74,6 +73,7 @@ textarea::placeholder {
 .admin-left-side a:hover {
   color: #fff;
 }
+
 .validation-error {
   color: red;
   float: right;
@@ -208,6 +208,7 @@ input:disabled {
   position: relative;
   z-index: 1;
 }
+
 .service-item .edit-delete span {
   padding: 15px;
 }
@@ -282,6 +283,7 @@ input:disabled {
 .service-block-one .text span {
   color: #000821;
 }
+
 .contact-form input[type="number"] {
   display: block;
   width: 100%;

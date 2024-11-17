@@ -5,7 +5,7 @@ import Login from "./Markup/Pages/Login/Login";
 import Employee from "./Markup/Pages/Admin/Employee/Employee";
 import Contact from "./Markup/Pages/Contact Us/Contact";
 import About from "./Markup/Pages/About/About"
-import "./assets/template_assets/css/bootstrap.css";
+import "./assets/template_assets/css/bootstrap.css"
 import "./assets/template_assets/css/style.css";
 import "./assets/template_assets/css/responsive.css";
 import "./assets/template_assets/css/color.css";

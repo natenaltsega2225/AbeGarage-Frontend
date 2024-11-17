@@ -114,7 +114,7 @@ function Footer() {
                                                     id="subscription-email"/>
                                                 <button className="theme-btn" type="submit"><span
                                                         className="fas fa-paper-plane"></span></button>
-                                                <label className="subscription-label" for="subscription-email"></label>
+                                                <label className="subscription-label" htmlFor="subscription-email"></label>
                                             </div>
                                         </form>
                                     </div>

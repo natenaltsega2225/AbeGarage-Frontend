@@ -4,12 +4,9 @@ import React from 'react';
 function Footer() {
   return (
    <footer className="main-footer">
-
             <div className="upper-box">
                 <div className="auto-container">
                     <div className="row no-gutters">
-
-                        
                         <div className="footer-info-box col-md-4 col-sm-6 col-xs-12">
                             <div className="info-inner">
                                 <div className="content">

@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./Markup/Pages/Home/Home";
 import Login from "./Markup/Pages/Login/Login";
-import Employee from "./Markup/Pages/Admin/Employee/Employee";
+import AddEmployee from "./Markup/Pages/Admin/Employee/AddEmployee/AddEmployee";
 import Contact from "./Markup/Pages/Contact Us/Contact";
 import About from "./Markup/Pages/About/About"
 import "./assets/template_assets/css/bootstrap.css"
@@ -23,7 +23,7 @@ function App() {
         <Route path="/unauthorized" element={<Unauthorized/>} />
         <Route path="/add-employee" element={
          <PrivateAuthRoute roles={[3]}>
-          <Employee />
+          <AddEmployee />
           </PrivateAuthRoute>}
         />
         <Route path="/Contact" element={<Contact />} />

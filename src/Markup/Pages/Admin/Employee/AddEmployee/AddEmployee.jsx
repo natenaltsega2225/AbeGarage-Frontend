@@ -1,8 +1,8 @@
 import React from 'react'
-import Layout from '../../Layout/Layout'
-import AddEmployeeForm from "../../../Components/Admin/AddEmployee/AddEmployeeForm"
-import Sidebar from '../../../Components/Admin/SideBar/Sidebar';
-function Employee() {
+import Layout from '../../../Layout/Layout'
+import AddEmployeeForm from "../../../../Components/Admin/AddEmployee/AddEmployeeForm"
+import Sidebar from '../../../../Components/Admin/SideBar/Sidebar';
+function AddEmployee() {
   return (
     <Layout>
       <div className="container-fluid admin-pages">
@@ -19,4 +19,4 @@ function Employee() {
   );
 }
 
-export default Employee
+export default AddEmployee

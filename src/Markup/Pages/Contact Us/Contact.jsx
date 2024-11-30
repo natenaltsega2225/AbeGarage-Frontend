@@ -9,7 +9,8 @@ import PhoneIcon from "@mui/icons-material/Phone";
 
 function Contact() {
   const apiKey = import.meta.env.VITE_MAPS_API_KEY; // Access the API key from env
-  const mapSrc = `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=54B,+Tailstoi+Town,+5238+MT,+La+city,+IA+5224`;
+  // const mapSrc = `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=54B,+Tailstoi+Town,+5238+MT,+La+city,+IA+5224`;
+  const mapSrc = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31523.80380701426!2d38.712689898073435!3d9.020316224195062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b860b3a4e6733%3A0x3ae74ad7c1cd9d1e!2sAbinet%2C%20Addis%20Ababa!5e0!3m2!1sen!2set!4v1711117652523!5m2!1sen!2set`
   return (
     <Layout>
       <div className={classes.contact}>

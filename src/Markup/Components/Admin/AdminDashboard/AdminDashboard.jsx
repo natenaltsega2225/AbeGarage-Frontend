@@ -52,20 +52,20 @@ function AdminDashboard() {
       div: "SERVICE +",
       icon: "flaticon-customer-service-1",
     },
-    {
-      link: "/customers",
-      h5: "Open For All",
-      h2: "Customers ",
-      div: "CUSTOMERS ",
-      icon: "flaticon-car-service",
-    },
-    {
-      link: "/services",
-      h5: "Open For All",
-      h2: "Services List",
-      div: "SERVICE +",
-      icon: "flaticon-customer-service-1",
-    },
+    // {
+    //   link: "/customers",
+    //   h5: "Open For All",
+    //   h2: "Customers ",
+    //   div: "CUSTOMERS ",
+    //   icon: "flaticon-car-service",
+    // },
+    // {
+    //   link: "/services",
+    //   h5: "Open For All",
+    //   h2: "Services List",
+    //   div: "SERVICE +",
+    //   icon: "flaticon-customer-service-1",
+    // },
   ];
 
   return (

@@ -1,0 +1,188 @@
+.appointmentcontainer {
+  align-items: center;
+  height: 35vh;
+  padding: 40px;
+  background-color: #f0f0f0;
+}
+
+/* Styling the appointment box container */
+.appointmentBox {
+  background-color: red;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  max-width: 800px;
+  margin: 30px auto 30px auto;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+
+/* Styles for the appointment text */
+.appointment h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.appointment p {
+  font-size: 11px;
+}
+
+.contactInfo button {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: small;
+  font-weight: bold;
+}
+
+.contactInfo button i {
+  margin-left: 10px; /* Space between text and arrow */
+}
+
+.number {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .contactus h1 {
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  .location {
+    flex-direction: column; /* Stack the elements vertically */
+    margin: 20px;
+    gap: 20px;
+  }
+
+  .map iframe {
+    width: 100%; /* Make the iframe responsive */
+    margin-left: 0;
+  }
+
+  .contactus a {
+    padding-left: 20px;
+  }
+
+  .appointmentcontainer {
+    padding: 20px;
+    height: auto; /* Adjust height based on content */
+  }
+
+  .appointmentBox {
+    padding: 15px;
+    max-width: 100%; /* Allow the box to stretch to full width */
+    margin: 20px 0;
+  }
+
+  .appointment h1 {
+    font-size: 22px;
+  }
+
+  .appointment p {
+    font-size: 14px; /* Increase text size for readability */
+  }
+
+  .contactInfo button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .number h4 {
+    font-size: 24px;
+    padding: 10px 15px;
+  }
+}
+
+/* For Small Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+  .contactus h1 {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+
+  .location {
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px;
+  }
+
+  .map iframe {
+    width: 100%; /* Ensure iframe takes full width on smaller screens */
+    height: 250px;
+  }
+
+  .contactus a {
+    padding-left: 10px;
+  }
+
+  .appointmentcontainer {
+    padding: 20px;
+    height: auto;
+  }
+
+  .appointmentBox {
+    padding: 15px;
+    margin: 20px 0;
+  }
+
+  .appointment h1 {
+    font-size: 20px;
+  }
+
+  .appointment p {
+    font-size: 12px; /* Increase text size slightly */
+  }
+
+  .contactInfo button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .number h4 {
+    font-size: 22px;
+    padding: 10px 15px;
+  }
+
+  .contactInfo button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+
+/* .contactus {
+  background-image: url(../../../assets/images/background/servicebanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+  background-position: center;
+  padding-left: 320px;
+} */
+.contactus {
+  background-image: url(../../../assets/images/background/bg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+  background-position: center;
+  padding-left: 320px;
+}
+.contactus h1 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: white;
+  /* color: rgb(233, 232, 232); */
+}
+
+.contactus a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}

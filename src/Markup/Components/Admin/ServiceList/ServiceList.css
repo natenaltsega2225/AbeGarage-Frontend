@@ -1,0 +1,16 @@
+.custom-modal .modal-dialog {
+  position: fixed;
+  top: 0px;
+  right: 100px;
+  width: 300px; /* Adjust size as needed */
+}
+
+.custom-modal .modal-content {
+  border-radius: 10px;
+  background-color: #f8f9fa; /* Optional: change background color */
+}
+
+.custom-modal .modal-header,
+.custom-modal .modal-body {
+  padding: 10px; /* Adjust padding as needed */
+}

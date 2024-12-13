@@ -25,7 +25,7 @@ import EditCustomer from "./Markup/Pages/Admin/Customer/EditCustomer/EditCustome
 import Orders from "./Markup/Pages/Admin/OrdersList/Orders";
 import OrderDetailsPage from "./Markup/Pages/Admin/OrderDetailsPage/OrderDetailsPage";
 import CustomerProfile from "./Markup/Pages/Admin/Customer/CustomerProfile/CustomerProfile";
-import CustomerList from "./Markup/Pages/Admin/Customer/CustomerList/CustomerList"
+import CustomerList from "./Markup/Pages/Admin/Customer/CustomerList/CustomerList";
 
 function App() {
   return (
@@ -105,7 +105,7 @@ function App() {
             </PrivateAuthRoute>
           }
         />
-            
+
         <Route
           path="/admin/orders"
           element={

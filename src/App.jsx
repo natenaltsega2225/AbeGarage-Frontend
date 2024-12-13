@@ -97,8 +97,15 @@ function App() {
         />
 
         <Route path="/Contact" element={<Contact />} />
-        <Route path="/services" element={<Services />} />
-
+        <Route
+          path="/admin/services"
+          element={
+            <PrivateAuthRoute roles={[1, 2, 3]}>
+              <Services />
+            </PrivateAuthRoute>
+          }
+        />
+            
         <Route
           path="/admin/orders"
           element={
@@ -134,7 +141,7 @@ function App() {
           }
         />
         {/* Services page routes start Here */}
-        <Route path="/admin/services" element={<Servicespage />} />
+        <Route path="/services" element={<Servicespage />} />
         <Route
           path={`/admin/services/service-update/:id`}
           element={<EditServices />}

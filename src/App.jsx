@@ -26,6 +26,7 @@ import Orders from "./Markup/Pages/Admin/OrdersList/Orders";
 import OrderDetailsPage from "./Markup/Pages/Admin/OrderDetailsPage/OrderDetailsPage";
 import CustomerProfile from "./Markup/Pages/Admin/Customer/CustomerProfile/CustomerProfile";
 import CustomerList from "./Markup/Pages/Admin/Customer/CustomerList/CustomerList";
+import SelectVehicle from "./Markup/pages/Admin/SelectVehicle/SelectVehicle";
 
 function App() {
   return (
@@ -97,14 +98,7 @@ function App() {
         />
 
         <Route path="/Contact" element={<Contact />} />
-        <Route
-          path="/admin/services"
-          element={
-            <PrivateAuthRoute roles={[1, 2, 3]}>
-              <Services />
-            </PrivateAuthRoute>
-          }
-        />
+        <Route path="/services" element={<Services />} />
 
         <Route
           path="/admin/orders"
@@ -124,6 +118,14 @@ function App() {
         />
         <Route path="/Contact" element={<Contact />} />
         <Route
+          path="/admin/select-vehicle/:customer_hash"
+          element={
+            <PrivateAuthRoute roles={[3]}>
+              <SelectVehicle />
+            </PrivateAuthRoute>
+          }
+        />
+        <Route
           path="/admin/add-customer"
           element={
             <PrivateAuthRoute roles={[3]}>
@@ -141,7 +143,7 @@ function App() {
           }
         />
         {/* Services page routes start Here */}
-        <Route path="/services" element={<Servicespage />} />
+        <Route path="/admin/services" element={<Servicespage />} />
         <Route
           path={`/admin/services/service-update/:id`}
           element={<EditServices />}

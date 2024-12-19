@@ -19,7 +19,7 @@ import "./assets/styles/custom.css";
 import PrivateAuthRoute from "./Markup/Components/Auth/PrivateAuthRoute";
 import Unauthorized from "./Markup/Pages/Unauthorized";
 import Services from "./Markup/Pages/Services/Services";
-import Services from "./Markup/Pages/Admin/Services/Services";
+// import Services from "./Markup/Pages/Admin/Services/Services";
 import EditServices from "./Markup/Pages/Admin/EditServices/EditServices";
 import EditCustomer from "./Markup/Pages/Admin/Customer/EditCustomer/EditCustomer";
 import Orders from "./Markup/Pages/Admin/OrdersList/Orders";

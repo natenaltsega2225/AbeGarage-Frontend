@@ -7,12 +7,7 @@ import { AuthProvider } from "./Contexts/AuthContext.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter
-      future={{
-        v7_relativeSplatPath: true,
-        v7_startTransition: true,
-      }}
-    >
+    <BrowserRouter>
       <AuthProvider>
         <App />
       </AuthProvider>

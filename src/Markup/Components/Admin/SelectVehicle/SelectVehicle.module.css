@@ -1,0 +1,163 @@
+/* ========================
+   General Styles
+======================== */
+.body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #0056b3;
+}
+
+.input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.input::placeholder {
+  color: #aaa;
+}
+
+.textarea {
+  width: 100%;
+  height: 100px;
+  padding: 0.8rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  resize: none;
+  font-size: 1rem;
+}
+
+/* ========================
+     Customer Info Module
+  ======================== */
+.customerInfo {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+}
+
+.customerHeader {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.customerText {
+  margin: 0.5rem 0;
+}
+.customerText span {
+  font-weight: bold;
+}
+.editButton {
+  margin-top: 0.5rem;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* ========================
+     Vehicle Info Module
+  ======================== */
+.vehicleInfo {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+}
+
+.vehicleHeader {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.vehicleText {
+  margin: 0.5rem 0;
+}
+
+/* ========================
+     Service List Module
+  ======================== */
+.serviceList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.serviceItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.checkbox {
+  transform: scale(1.2);
+}
+
+/* ========================
+     Form Container Module
+  ======================== */
+.serviceForm {
+  width: 100%;
+  margin: 0.5rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formHeader {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.submitButton {
+  background: #28a745;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background: #218838;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .table {
+    margin-left: -45px;
+  }
+}

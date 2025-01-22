@@ -136,7 +136,7 @@ function App() {
           }
         />
        <Route
-          path="/admin/order/order-update/:order_hash/"
+          path="/admin/orders/order-update/:order_hash"
           element={
             <PrivateAuthRoute roles={[1, 2, 3]}>
               <OrderStatusPage />

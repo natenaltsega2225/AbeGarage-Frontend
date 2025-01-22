@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import orderService from "../../../../Services/order.service"; // Import the service
 import styles from "./UpdateOrderStatus.module.css";
 import { useAuth } from "./../../../../Contexts/AuthContext";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 const UpdateOrderStatus = () => {
   const { order_hash } = useParams();
@@ -11,7 +11,7 @@ const UpdateOrderStatus = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [statusBadge, setStatusBadge] = useState("In Progress");
-
+const navigate = useNavigate();
   const { toggleOrdersUpdated } = useAuth(); // Consume `toggleOrdersUpdated`
 
   useEffect(() => {
@@ -78,6 +78,7 @@ const UpdateOrderStatus = () => {
         });
 
       alert("Order status updated successfully!");
+      navigate('/admin/orders')
 
       // Notify the OrdersPage of the update
       toggleOrdersUpdated(); // Call toggleOrdersUpdated to trigger re-fetch

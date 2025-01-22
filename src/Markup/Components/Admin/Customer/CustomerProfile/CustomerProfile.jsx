@@ -380,7 +380,7 @@ function CustomerProfile() {
                       </Link> */}
 
                         <span>
-                          <Link to={`/admin/edit-vehicle/${customer1.customer_hash}/${vehicle_id}`}  style={{ textDecoration: "none", color: "inherit" }}>
+                          <Link to={`/admin/edit-vehicle/${customer1.customer_hash}/${vehicle.vehicle_id}`}  style={{ textDecoration: "none", color: "inherit" }}>
                             <FaEdit color="#E90D09" />
                           </Link>
                         </span>

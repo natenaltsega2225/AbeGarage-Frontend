@@ -92,6 +92,10 @@ function AddEmployeeForm(props) {
         // If Error is returned from the API server, set the error message
         if (data.message || data.error) {
           setServerError(data.message || data.error);
+          setTimeout(() => {
+            // window.location.href = '/admin/employees';
+            navigate("/admin/employees");
+          }, 500);
         } else {
           // Handle successful response
           setSuccess(true);

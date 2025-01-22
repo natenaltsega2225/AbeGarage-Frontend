@@ -65,7 +65,7 @@ function Contact() {
                 <PhoneIcon style={{ color: "red" }} />
                 <div className={classes.address}>
                   <h5>Phone:</h5>
-                  <p>1800 456 7890 1254 897 3654</p>
+                  <p>1800 456 7890 | 1254 897 3654</p>
                 </div>
               </div>
             </div>

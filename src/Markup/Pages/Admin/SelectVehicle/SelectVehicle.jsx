@@ -1,5 +1,5 @@
 import React from "react";
-import Sidebar from "../../../Components/Admin/SideBar/Sidebar";
+import Sidebar from "../../../Components/Admin/Sidebar/Sidebar";
 import SelectVehicle from "../../../Components/Admin/SelectVehicle/SelectVehicle";
 import Layout from "../../Layout/Layout";
 function Orders() {

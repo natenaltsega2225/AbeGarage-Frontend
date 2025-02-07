@@ -1,5 +1,5 @@
 import React from 'react'
-import Sidebar from '../../../../Components/Admin/SideBar/Sidebar';
+import Sidebar from '../../../../Components/Admin/Sidebar/Sidebar';
 import EmployeesList from '../../../../Components/Admin/AdminMenu/EmployeeList/EmployeeList';
 import Layout from '../../../Layout/Layout';
 function EmployeeList() {

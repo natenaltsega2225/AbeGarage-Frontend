@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../../../Layout/Layout'
 import EditCustomerForm from '../../../../Components/Admin/Customer/EditCustomerForm/EditCustomerForm'
-import Sidebar from '../../../../Components/Admin/SideBar/Sidebar'
+import Sidebar from '../../../../Components/Admin/Sidebar/Sidebar'
 
 function EditCustomer() {
   return (

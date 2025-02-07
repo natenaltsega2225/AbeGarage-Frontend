@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../../Layout/Layout';
-import Sidebar from '../../../Components/Admin/SideBar/Sidebar';
+import Sidebar from '../../../Components/Admin/Sidebar/Sidebar';
 import CreateOrders from '../../../Components/Admin/Orders/CreateOrders';
 
 function NewOrders() {

@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../../../Layout/Layout'
 import EmployeeUpdateForm from '../../../../Components/Admin/EmployeeUpdateForm/EmployeeUpdateForm'
-import Sidebar from '../../../../Components/Admin/SideBar/Sidebar'
+import Sidebar from '../../../../Components/Admin/Sidebar/Sidebar'
 
 function EmployeeUpdate() {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../../../Layout/Layout";
 
-import Sidebar from "../../../../Components/Admin/SideBar/Sidebar";
+import Sidebar from "../../../../Components/Admin/Sidebar/Sidebar";
 import AddCustomerForm from "../../../../Components/Admin/Customer/AddCustomer/AddCustomerForm";
 function AddCustomer() {
   return (

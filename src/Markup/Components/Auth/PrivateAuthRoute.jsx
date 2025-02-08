@@ -1,6 +1,6 @@
 // Import React, the useState and useEffect hooks
 import React, { useState, useEffect } from "react";
-// Import the Route and Navigate components
+// Import the Route and Navigate Components
 import { Navigate } from "react-router";
 // Import the Util function we created to handle the reading from the local storage
 import getAuth from "../../../util/auth";

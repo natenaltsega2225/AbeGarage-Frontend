@@ -1,6 +1,6 @@
 import React from "react";
 import SideBar from "../../../../Components/Admin/Sidebar/Sidebar"
-import CustomerProfile from "../../../../components/Admin/Customer/CustomerProfile/CustomerProfile";
+import CustomerProfile from "../../../../Components/Admin/Customer/CustomerProfile/CustomerProfile";
 
 function AddOrderPage() {
   return (

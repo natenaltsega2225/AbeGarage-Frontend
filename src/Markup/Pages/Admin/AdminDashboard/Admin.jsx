@@ -1,7 +1,7 @@
 import React from "react";
 
 // Import the Admin component
-import AdminMenu from "../../../Components/Admin/SideBar/Sidebar";
+import AdminMenu from "../../../Components/Admin/Sidebar/Sidebar";
 import AdminDashboard from "../../../Components/Admin/AdminDashboard/AdminDashboard";
 
 // Import the auth hook context

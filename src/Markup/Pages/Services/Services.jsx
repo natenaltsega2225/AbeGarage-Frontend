@@ -3,7 +3,7 @@ import Layout from "../Layout/Layout";
 import { Link } from "react-router-dom";
 import ServicesSec from '../../Components/ServiceSec/ServicesSec';
 import WhyChooseUs from '../../Components/WhyChoosUs/WhyChooseUs';
-import classes from "./Services.module.css";
+import classes from "./services.module.css";
 import BottomBanner from '../../Components/Banner/BottomBanner';
 // import PhoneIcon from "@mui/icons-material/Phone";
 function Services() {

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Table } from "react-bootstrap";
 import { format } from "date-fns";
-import customerService from "../../../../../services/customer.service";
+import customerService from "../../../../../Services/customer.service";
 import { useNavigate } from "react-router-dom";
 import { FaEdit } from "react-icons/fa";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";

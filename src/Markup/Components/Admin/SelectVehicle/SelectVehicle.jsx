@@ -3,7 +3,7 @@ import styles from "./SelectVehicle.module.css";
 import { Table } from "react-bootstrap";
 import { FaEdit, FaHandPointer, FaWindowClose } from "react-icons/fa";
 import { useAuth } from "../../../../Contexts/AuthContext";
-import vehicleService from "../../../../services/vehicle.service";
+import vehicleService from "../../../../Services/vehicle.service";
 import { useNavigate, useParams } from "react-router-dom";
 import customerService from "../../../../Services/customer.service";
 function CustomerProfile() {

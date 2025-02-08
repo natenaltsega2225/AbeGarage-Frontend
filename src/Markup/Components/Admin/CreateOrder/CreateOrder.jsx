@@ -4,10 +4,10 @@ import styles from "./CreateNewOrder.module.css";
 import { FaEdit } from "react-icons/fa";
 import { FaWindowClose } from "react-icons/fa";
 import customerService from "../../../../Services/customer.service";
-import vehicleService from "../../../../services/vehicle.service";
-import orderService from "../../../../services/order.service";
+import vehicleService from "../../../../Services/vehicle.service";
+import orderService from "../../../../Services/order.service";
 import { useAuth } from "../../../../Contexts/AuthContext";
-import SERVICe from "../../../../services/service.service";
+import SERVICe from "../../../../Services/service.service";
 import { BeatLoader } from "react-spinners";
 function CreateNewOrder() {
   const { customer_hash, vehicle_id } = useParams();

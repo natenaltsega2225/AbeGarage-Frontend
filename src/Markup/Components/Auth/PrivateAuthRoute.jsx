@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 // Import the Route and Navigate components
 import { Navigate } from "react-router";
 // Import the Util function we created to handle the reading from the local storage
-import getAuth from "../../../util/auth.JSX";
+import getAuth from "../../../util/auth";
 
 const PrivateAuthRoute = ({ roles, children }) => {
   const [isChecked, setIsChecked] = useState(false);

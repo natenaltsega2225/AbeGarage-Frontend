@@ -24,7 +24,7 @@ const About24 = () => {
           <div className="col-lg-7 pl-lg-5">
             <div className="sec-title">
               <h5>Welcome to our workshop</h5>
-              <h2>We have 24 years experience</h2>
+              <h2>We have 25 years experience</h2>
               <div className="text">
                 <p>
                   Bring to the table win-win survival strategies to ensure

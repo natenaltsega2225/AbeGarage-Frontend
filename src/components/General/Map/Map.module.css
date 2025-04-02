@@ -1,0 +1,66 @@
+.map {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+
+}
+.content {
+    width: 55%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.left {
+    width: 100%;
+    background-color: aliceblue;
+}
+.right {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.right h2 {
+    font-size: 30px;
+    color: rgb(8, 25, 74);
+}
+.right p {
+    margin: 20px 0;
+    font-size: 13px;
+    color: rgb(142, 149, 161);
+}
+.address {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.address>p {
+    font-size: 30px;
+    color: rgba(227, 14, 14, 0.902);
+}
+.text h4 {
+    color: rgb(8, 25, 74);
+    font-size: 13px;
+}
+.text p {
+    margin-top: 8px;
+}
+
+@media (max-width: 1000px) {
+    .content {
+        width: 75%;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .content {
+        width: 80%;
+    }
+}
+@media (max-width: 650px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+    .right {
+        text-align: center;
+    }
+    
+}

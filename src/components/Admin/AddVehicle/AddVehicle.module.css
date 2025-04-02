@@ -1,0 +1,142 @@
+.header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.line {
+    width: 30px;
+    height: 2px;
+    background-color: rgb(238,13,21);
+    margin-top: -5px;
+}
+.header h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(8,25,74);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.AddCustomer {
+    position: relative;
+    padding-top: 20px;
+}
+.addContainer {
+    background-color: #fff;
+    padding: 35px;
+}
+.AddCustomer>button {
+    all: unset;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(238,13,21);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form_login {
+    width: 70%;
+}
+.form_login input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid rgba(136, 137, 141, 0.47);
+    background-color: #fff;
+}
+.form_login input::placeholder {
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+    .form_login {
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .form_login input {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .form_login input::placeholder {
+        font-size: 10px;
+    }
+
+    .header {
+        gap: 7px;
+    }
+    .line {
+        width: 20px;
+    }
+    .header h3 {
+        font-size: 16px;
+    }
+
+    .form_login input {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .form_login input::placeholder {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .form_login input {
+        padding: 8px;
+        margin: 8px 0;
+    }
+    .form_login input::placeholder {
+        font-size: 8px;
+    }
+
+    .header {
+        gap: 7px;
+    }
+    .line {
+        width: 16px;
+        height: 2px;
+    }
+    .header h3 {
+        font-size: 13px;
+    }
+
+    .form_login input {
+        padding: 8px;
+        margin: 8px 0;
+    }
+    .form_login input::placeholder {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 350px) {
+    .form_login input {
+        padding: 7px;
+        margin: 7px 0;
+    }
+    .form_login input::placeholder {
+        font-size: 7px;
+    }
+
+    .header {
+        gap: 7px;
+    }
+    .line {
+        width: 12px;
+        height: 1.5px;
+    }
+    .header h3 {
+        font-size: 10px;
+    }
+
+    .form_login input {
+        padding: 7px;
+        margin: 7px 0;
+    }
+    .form_login input::placeholder {
+        font-size: 7px;
+    }
+}

@@ -1,0 +1,225 @@
+.Employees {
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(8,25,74);
+    position: relative;
+    /* height: 100vh; */
+}
+.header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.line {
+    width: 30px;
+    height: 2px;
+    background-color: rgb(238,13,21);
+    margin-top: -5px;
+}
+.header h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.table table {
+    width: 100%;
+    border: 1px solid rgba(136, 137, 141, 0.47);
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+.table thead tr th {
+    padding: 10px;
+    border: 1px solid rgba(136, 137, 141, 0.47);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.table tbody tr td {
+    padding: 10px;
+    border: 1px solid rgba(136, 137, 141, 0.47);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.table tbody tr td:last-child {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 12px;
+    border: none;
+}
+.table tbody tr td button {
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+
+}
+
+.Delete {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 200px;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10; /* Higher than the overlay */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    gap: 15px;
+    background-color: #fff;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Dim effect */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter:  blur(10px); /* Blurs only the background */
+    z-index: 5;
+    display: none; /* Initially hidden */
+}
+
+.show {
+    display: block; /* Show when delete is active */
+}
+
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: rgb(238,13,21);
+    font-size: 19px;
+    cursor: pointer;
+}
+.Delete input {
+    width: 85%;
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+}
+.Delete button {
+    width: 120px;
+    height: 30px;
+    margin: 0  auto;
+    background-color: rgb(238,13,21);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+.Delete p {
+    font-size: 15px;
+}
+.Delete span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%; 
+}
+
+.loading img {
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+
+@media (max-width: 900px) {
+    .Employees {
+        margin: 30px;
+    }
+
+    .table thead tr th {
+        padding: 7px;
+        font-size: 12px;
+    
+    }
+    .table tbody tr td {
+        padding: 7px;
+        font-size: 12px;
+    }
+    .table tbody tr td button {
+        font-size: 18px;
+    
+    }
+}
+
+@media (max-width: 500px) {
+    .Employees {
+        margin: 17px;
+    }
+    .header h3 {
+        font-size: 13px;
+    }
+
+    .header {
+        gap: 5px;
+    }
+    .line {
+        width: 15px;
+        height: 1.5px;
+    }
+
+    .table thead tr th {
+        padding: 3px;
+        font-size: 7px;
+    
+    }
+    .table tbody tr td {
+        padding: 3px;
+        font-size: 7px;
+    }
+    .table tbody tr td button {
+        font-size: 10px;
+    
+    }
+}
+
+
+@media (max-width: 500px) {
+    .Employees {
+        margin: 15px;
+    }
+    .header h3 {
+        font-size: 10px;
+    }
+
+    .header {
+        gap: 5px;
+    }
+    .line {
+        width: 10px;
+        height: 1.5px;
+    }
+
+    .table thead tr th {
+        padding: 1px;
+        font-size: 6.5px;
+    
+    }
+    .table tbody tr td {
+        padding: 1px;
+        font-size: 6.5px;
+    }
+    .table tbody tr td button {
+        font-size: 10px;
+    
+    }
+}

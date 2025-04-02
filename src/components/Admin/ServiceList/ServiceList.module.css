@@ -1,0 +1,288 @@
+.ServiceList {
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(8,25,74);
+    /* position: relative; */
+}
+
+.header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.line {
+    width: 30px;
+    height: 2px;
+    background-color: rgb(238,13,21);
+    margin-top: -5px;
+}
+.header h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.text {
+    color: rgb(142, 149, 161);
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+
+.itemContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    padding: 14px;
+    background-color: #fff;
+}
+.left h1{
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+.left p {
+    font-size: 12px;
+}
+.right {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.right button {
+    background: transparent;
+    border: none;
+    font-size: 17px;
+}
+.red {
+    color: rgb(238,13,21);
+}
+
+.AddService{
+    padding: 50px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+.form {
+    margin-top: 20px;
+}
+.name , .description{
+    width: 80%;
+    margin-bottom: 20px;
+    border: 1px solid rgba(142, 149, 161, 0.37)
+}
+.price {
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solid rgba(142, 149, 161, 0.37)
+}
+.form input, .form textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+}
+
+.form input::placeholder, .form textarea::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btn {
+    padding: 10px 15px;
+    border: none;
+    color: #fff;
+    background-color: rgb(238,13,21);
+}
+
+.EditService {
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(8,25,74);
+}
+.close {
+    float: right;
+    margin-top: -35px;
+    margin-right: 150px;
+    color: #fff;
+    background-color: rgb(238,13,21);
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Delete {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 200px;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10; /* Higher than the overlay */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    gap: 15px;
+    background-color: #fff;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Dim effect */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter:  blur(10px); /* Blurs only the background */
+    z-index: 5;
+    display: none; /* Initially hidden */
+}
+
+.show {
+    display: block; /* Show when delete is active */
+}
+
+
+.Delete .close {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    margin-right: -6px;
+    color: rgb(238,13,21);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 19px;
+    cursor: pointer;
+}
+.Delete input {
+    width: 85%;
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+}
+.Delete button {
+    width: 120px;
+    height: 30px;
+    margin: 0  auto;
+    background-color: rgb(238,13,21);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+.Delete p {
+    font-size: 15px;
+}
+.Delete span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media (max-width: 500px){
+
+    .header {
+        gap: 8px;
+    }
+    .line {
+        width: 20px;
+    }
+    .header h3 {
+        font-size: 16px;
+    }
+
+    .itemContainer {
+        flex-direction: column;
+        gap: 7px;
+        margin-top: 10px;
+    }
+    .left h1 {
+        font-size: 15px;
+    }
+    .left p {
+        font-size: 10px;
+    }
+    .right {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .right button {
+        font-size: 15px;
+    }
+    .AddService {
+        padding: 20px;
+    }
+    .form {
+        margin-top: 10px;
+    }
+    .name , .description{
+        width: 100%;
+    }
+    .price {
+        width: 50%;
+    }
+    .form input, .form textarea {
+        padding: 10px;
+    }
+    .form input::placeholder, .form textarea::placeholder{
+        font-size: 12px;
+    }
+    .btn {
+        padding: 5px 10px;
+    }
+
+    .listContainer .itemContainer .right button {
+        font-size: 25px;
+    }
+
+
+}
+
+@media (max-width: 400px){
+    .header h3 {
+        font-size: 14px;
+    }
+    .itemContainer {
+        padding: 10px;
+    }
+    .left h1 {
+        font-size: 13px;
+    }
+    .left p {
+        font-size: 9px;
+    }
+    .right button {
+        font-size: 13px;
+    }
+    .AddService {
+        padding: 10px;
+    }
+    .form {
+        margin-top: 10px;
+    }
+    .name , .description{
+        width: 100%;
+    }
+    .price {
+        width: 50%;
+    }
+    .form input, .form textarea {
+        padding: 10px;
+    }
+    .form input::placeholder, .form textarea::placeholder{
+        font-size: 12px;
+    }
+    .btn {
+        padding: 5px 10px;
+        font-size: 8px;
+    }
+    .listContainer .itemContainer .right button {
+        font-size: 25px;
+    }
+}
+

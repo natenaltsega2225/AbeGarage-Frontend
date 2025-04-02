@@ -1,0 +1,367 @@
+.NewOrder {
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(8,25,74);
+    /* height: 100vh; */
+}
+.header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.line {
+    width: 30px;
+    height: 2px;
+    background-color: rgb(238,13,21);
+    margin-top: -5px;
+}
+.header h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.searchContainer {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: #fff;
+    border: 1px solid rgba(136, 137, 141, 0.47);
+}
+.searchContainer input {
+    width: 90%;
+    font-size: 14px;
+    outline: none;
+    border: none;
+}
+.searchContainer p img {
+    width: 18px;
+}
+ .customerList {
+    width: 80%;
+ }
+table {
+    width: 100%;
+    border: 1px solid rgba(136, 137, 141, 0.47);
+    margin-top: 10px;
+    padding: 0;
+    border-collapse: collapse;
+}
+table thead tr th {
+    padding: 10px;
+    border: 1px solid rgba(136, 137, 141, 0.47);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+table tbody tr td {
+    padding: 10px;
+    border: 1px solid rgba(136, 137, 141, 0.47);
+    font-size: 14px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.customerDetails {
+    background-color: #fff;
+    padding: 20px;
+    position: relative;
+}
+
+.customerDetails h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.customerDetails p {
+    font-size: 14px;
+    color: rgb(8,25,74);
+    margin: 5px 0;
+}
+.customerDetails p span {
+    color: rgba(108, 108, 109, 0.902);
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: rgb(238,13,21);
+    color: #fff;
+}
+.edit {
+    margin-left: 10px;
+    color: rgb(238,13,21);
+}
+
+.editConteiner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.spinner {
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+}
+.customerVehicle {
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 40px;
+    margin-top: 20px;
+}
+.customerVehicle h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.OrderList {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 30px;
+}
+.OrderList h1 {
+    font-size: 19px;
+    margin-bottom: 20px;
+    
+}
+.individualOrder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    margin: 5px 0;
+}
+.individualOrder h2 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.individualOrder p {
+    font-size: 14px;
+    color: rgba(108, 108, 109, 0.902);
+}
+.individualOrder .right input {
+    width: 25px;
+    height: 25px;
+    border: 1px solid rgba(136, 137, 141, 0.47);
+}
+.OrderList button {
+    padding: 10px 15px;
+    background-color: rgb(238,13,21);
+    border: none;
+    color: #fff;
+    margin-top: 30px;
+}
+.left .birr {
+    color: rgb(5, 18, 57);
+    margin: 5px 0;
+}
+
+@media (max-width: 500px) {
+    .NewOrder {
+        margin: 25px;
+    }
+    .header {
+        gap: 8px;
+    }
+    .line {
+        width: 20px;
+    }
+    .header h3 {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    .searchContainer {
+        width: 90%;
+        padding: 10px;
+    }
+    .searchContainer input {
+        width: 90%;
+        font-size: 10px;
+        outline: none;
+        border: none;
+    }
+    .searchContainer p {
+        font-size: 10px;
+    }
+    .searchContainer p img {
+        width: 15px;
+    }
+
+    .customerList {
+        width: 60%;
+     }
+    table {
+        width: 90%;
+        margin-top: 10px;
+        padding: 0;
+    }
+    table thead tr th {
+        padding: 5px;
+        font-size: 8px;
+    
+    }
+    table tbody tr td {
+        padding: 5px;
+        border: 1px solid rgba(136, 137, 141, 0.47);
+        font-size: 9px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .customerDetails {
+        padding: 15px;
+    }
+    
+    .customerDetails h1{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .customerDetails p {
+        font-size: 10px;
+        margin: 5px 0;
+    }
+
+    .close {
+        top: 17px;
+        right: 20px;
+        width: 17px;
+        height: 17px;
+    }
+
+    .OrderList {
+        margin-top: 15px;
+        padding: 20px;
+    }
+    .OrderList h1 {
+        font-size: 15px;
+        margin-bottom: 15px;
+        
+    }
+    .individualOrder {
+        padding: 10px 8px;
+        gap: 10px;
+    }
+    .individualOrder h2 {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .individualOrder p {
+        font-size: 10px;
+    }
+    .individualOrder .right input {
+        width: 17px;
+        height: 17px;
+    }
+    .OrderList button {
+        padding: 8px 10px;
+        margin-top: 30px;
+        font-size: 13px;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+    .NewOrder {
+        margin: 20px;
+    }
+    .header {
+        gap: 5px;
+    }
+    .line {
+        width: 17px;
+    }
+    .header h3 {
+        font-size: 15px;
+        margin-bottom: 16px;
+    }
+
+    .searchContainer {
+        width: 90%;
+        padding: 10px;
+    }
+    .searchContainer input {
+        width: 90%;
+        font-size: 8px;
+    }
+    .searchContainer p {
+        font-size: 8px;
+    }
+    .searchContainer p img {
+        width: 10px;
+    }
+
+    .customerList {
+        width: 60%;
+     }
+    table {
+        margin-top: 8px;
+    }
+    table thead tr th {
+        padding: 3px;
+        font-size: 6px;
+    
+    }
+    table tbody tr td {
+        padding: 3px;
+        font-size: 6px;
+    }
+
+    .customerDetails {
+        padding: 10px;
+    }
+    
+    .customerDetails h1{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .customerDetails p {
+        font-size: 8px;
+    }
+
+    .close {
+        top: 17px;
+        right: 20px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .OrderList {
+        margin-top: 10px;
+        padding: 15px;
+    }
+    .OrderList h1 {
+        font-size: 12px;
+        margin-bottom: 10px;
+        
+    }
+    .individualOrder {
+        padding: 7px 5px;
+        gap: 8px;
+    }
+    .individualOrder h2 {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    .individualOrder p {
+        font-size: 8px;
+    }
+    .individualOrder .right input {
+        width: 15px;
+        height: 15px;
+    }
+    .OrderList button {
+        padding: 8px 10px;
+        margin-top: 30px;
+        font-size: 10px;
+    }
+
+}

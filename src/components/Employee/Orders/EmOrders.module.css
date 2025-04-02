@@ -1,0 +1,401 @@
+.EmOrders {
+    margin: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(8,25,74);
+}
+
+.header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.EmOrders .header h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.line {
+    width: 30px;
+    height: 2px;
+    background-color: rgb(238,13,21);
+    margin-top: -10px;
+}
+
+.table table {
+    width: 100%;
+    border: 1px solid rgba(136, 137, 141, 0.47);
+    margin: 20px 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+.table thead tr th, .table tbody tr td {
+    padding: 10px;
+    border: 1px solid rgba(136, 137, 141, 0.47);
+    font-size: 14px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.table tbody tr td:last-child {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.table tbody tr td:last-child p {
+    font-size: 25px;
+}
+
+.container {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.serviceItem {
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-top: 20px;
+}
+
+.serviceName {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.serviceItem p {
+    font-size: 14px;
+}
+
+.service h2 {
+    font-size: 19px;
+    margin: 20px 0;
+    color: rgb(255, 0, 0);
+}
+
+.form div {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.form div h3 {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.form div p {
+    font-size: 13px;
+    color: rgb(67, 67, 67);
+}
+
+.formGroup {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.selecOrder {
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    height: 25px;
+    width: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.338);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.close p {
+    color: rgb(238,13,21);
+}
+
+@media (max-width: 1000px) {
+    .EmOrders {
+        margin: 20px;
+    }
+    .table table {
+        margin: 15px 0;
+    }
+    .table thead tr th, .table tbody tr td{
+        padding: 7px;
+        font-size: 10px;
+    }
+
+    .table tbody tr td p {
+        font-size: 10px;
+    }
+    .table tbody tr td h2 {
+        font-size: 12px;
+    }
+    .selecOrder .container {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .form div {
+        gap: 7px;
+    }
+    
+    .form div h3 {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    
+    .form div p {
+        font-size: 10px;
+    }
+
+    .serviceItem {
+        width: 100%;
+        max-width: 300px;
+        padding: 10px 15px;
+        margin-top: 20px;
+    }
+    .header h3 {
+        font-size: 15px;
+    }
+    
+    .serviceName {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .serviceName h3 {
+        font-size: 14px;
+    }
+    .serviceItem p {
+        font-size: 10px;
+    }
+    
+    .service h2 {
+        font-size: 16px;
+        margin: 20px 0;
+        color: rgb(255, 0, 0);
+    }
+    
+  
+   
+}
+
+@media (max-width: 768px) {
+    .EmOrders {
+        margin: 15px;
+    }
+    .EmOrders .header h3 {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+    
+    .line {
+        width: 20px;
+        height: 2px;
+        background-color: rgb(238,13,21);
+        margin-top: -10px;
+    }
+    .table table {
+        margin: 10px 0;
+    }
+    .table thead tr th, .table tbody tr td{
+        padding: 8px;
+        font-size: 9px;
+    }
+    .table tbody tr td {
+        padding: 8px;
+    }
+
+    .table tbody tr td p {
+        font-size: 9px;
+    }
+    .table tbody tr td h2 {
+        font-size: 10px;
+    }
+    .selecOrder .container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .form div {
+        gap: 5px;
+    }
+    
+    .form div h3 {
+        font-size: 9px;
+        margin-bottom: 10px;
+    }
+    
+    .form div p {
+        font-size: 9px;
+    }
+
+    .serviceName h3 {
+        font-size: 12px;
+    }
+    .serviceItem p {
+        font-size: 10px;
+        margin: 3px 0;
+    }
+    
+    .service h2 {
+        font-size: 13px;
+        margin: 20px 0;
+        color: rgb(255, 0, 0);
+    }
+}
+
+@media (max-width: 480px) {
+    .EmOrders {
+        margin: 10px;
+    }
+    .EmOrders .header h3 {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+    
+    .line {
+        width: 20px;
+        height: 2px;
+        background-color: rgb(238,13,21);
+        margin-top: -10px;
+    }
+    .table table {
+        margin: 10px 0;
+    }
+    .table thead tr th, .table tbody tr td{
+        padding: 8px;
+        font-size: 7px;
+    }
+    .table tbody tr td {
+        padding: 5px;
+    }
+
+    .table tbody tr td p {
+        font-size: 9px;
+    }
+    .table tbody tr td h2 {
+        font-size: 9px;
+    }
+
+    .table tbody tr td:last-child p {
+        font-size: 15px;
+    }
+    .selecOrder .container {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .form div {
+        gap: 5px;
+    }
+    
+    .form div h3 {
+        font-size: 9px;
+        margin-bottom: 10px;
+    }
+    
+    .form div p {
+        font-size: 9px;
+    }
+
+    .serviceName h3 {
+        font-size: 12px;
+    }
+    .serviceItem p {
+        font-size: 10px;
+        margin: 3px 0;
+    }
+    
+    .service h2 {
+        font-size: 13px;
+        margin: 20px 0;
+        color: rgb(255, 0, 0);
+    }
+}
+
+
+@media (max-width: 400px) {
+    .EmOrders {
+        margin: 7px;
+    }
+    .EmOrders .header h3 {
+        font-size: 12px;
+        margin-bottom: 9px;
+    }
+    
+    .line {
+        width: 15px;
+        height: 2px;
+        background-color: rgb(238,13,21);
+        margin-top: -10px;
+    }
+    .table table {
+        margin: 7px 0;
+    }
+    .table thead tr th, .table tbody tr td{
+        padding: 5px;
+        font-size: 5px;
+    }
+    .table tbody tr td {
+        padding: 4px;
+    }
+
+    .table tbody tr td p {
+        font-size: 7px;
+    }
+    .table tbody tr td h2 {
+        font-size: 7px;
+    }
+
+    .table tbody tr td:last-child p {
+        font-size: 10px;
+    }
+    .selecOrder .container {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .form div {
+        gap: 5px;
+    }
+    
+    .form div h3 {
+        font-size: 7px;
+        margin-bottom: 8px;
+    }
+    
+    .form div p {
+        font-size: 7px;
+    }
+
+    .serviceName h3 {
+        font-size: 10px;
+    }
+    .serviceItem p {
+        font-size: 7px;
+        margin: 3px 0;
+    }
+    
+    .service h2 {
+        font-size: 10px;
+        margin: 20px 0;
+        color: rgb(255, 0, 0);
+    }
+}
+

@@ -1,0 +1,140 @@
+.Quality {
+    height: 50vh;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    background-color: rgb(238,13,21);
+}
+.left {
+    width: 33%;
+    margin-top: 20px;
+    margin-left: 180px;
+}
+.left h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+.left p {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.right img {
+    width: 600px;
+    height: 100%;
+}
+
+
+
+@media (max-width: 1028px){
+    .Quality {
+        height: 50vh;
+    }
+    .left {
+        width: 500px;
+        margin-left: 100px;
+        /* text-align: center; */
+    }
+    .left h2 {
+        font-size: 20px;
+    }
+    .left p {
+        font-size: 12px;
+    }
+    .right img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 980px){
+    .Quality {
+        height: 50vh;
+    }
+    .left {
+        width: 50%;
+        margin-left: 100px;
+        /* text-align: center; */
+    }
+    .left h2 {
+        font-size: 20px;
+    }
+    .left p {
+        font-size: 12px;
+    }
+    .right img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 950px) {
+    .Quality {
+        max-height: 30vh;
+    }
+    .left {
+        padding-top: 40px;
+    }
+    .left h2 {
+        margin-top: 10px;
+    }
+}
+ 
+
+@media screen and (max-width: 768px) {
+    .Quality {
+        height: 70%;
+    }
+    .left {
+        width: 100%;
+        margin-left: 60px;
+    }
+    .left h2 {
+        font-size: 20px;
+    }
+    .left p {
+        font-size: 12px;
+    }
+    .right img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .Quality {
+        height: 70%;
+    }
+    .left {
+        width: 100%;
+        margin-left: 40px;
+    }
+    .left h2 {
+        font-size: 20px;
+    }
+    .left p {
+        font-size: 12px;
+    }
+    .right img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Quality {
+        height: 80%;
+    }
+    .left {
+        width: 100%;
+        margin-left: 20px;
+        margin-top: -15px;
+    }
+    .left h2 {
+        font-size: 12px;
+        margin: 0;
+    }
+    .left p {
+        margin-top: 5px;
+        font-size: 8px;
+    }
+    .right img {
+        width: 100%;
+    }
+}

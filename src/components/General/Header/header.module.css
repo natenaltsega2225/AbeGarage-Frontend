@@ -1,0 +1,203 @@
+.container {
+    height: 100px;
+
+    /* border: 1px solid black; */
+    /* overflow: hidden; */
+}
+.upper {
+    height: 35%;
+    /* border: 1px solid yellow; */
+    display: flex;
+} 
+.upper .left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    z-index: 1;
+    background-color: rgba(227, 14, 14, 0.902);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+.middle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    background-color: rgb(6, 6, 67);
+    color: white;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.lower {
+    height: 65%;
+    /* border: 1px solid red; */
+    box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px, rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.04) 0px 6px 6px -3px, rgba(14, 63, 126, 0.04) 0px 12px 12px -6px, rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+.lower .icon img{
+    width: 200px;
+}
+.right {
+    display: flex;
+    gap: 10px;
+}
+.right ul {
+    display: flex;
+    padding: 20px 0;
+}
+.right ul li {
+    list-style: none;
+    margin: 0 10px;
+    font-size: 13px;
+}
+.right ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    /* font-size: 13px; */
+}
+.right ul li .line {
+    width: 1px;
+    height: 20px;
+    background-color: black;
+}
+.right button {
+    height: 35px;
+    margin-top: 15px;
+    padding: 0 15px;
+    background-color: rgb(6, 6, 67);
+    border: none;
+    color: white;
+    font-size: 13px;
+}
+.mobile {
+    font-size: 40px;
+}
+.mobileOpen {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.mobileOpen.open {
+    width: 100%;
+    right: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.mobileOpen .red {
+    background-color: rgba(255, 0, 0, 0.457);
+    height: 100vh;
+}
+.mobileOpen ul {
+    width: 45%;
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    background-color: rgb(32,32,32);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+.mobileOpen ul li {
+    list-style: none;
+    margin: 10px 5px;
+    border-top: .1px solid rgba(255, 255, 255, 0.205);
+    border-bottom: .1px solid rgba(255, 255, 255, 0.205);
+    padding: 6px 3px;
+}
+.mobileOpen ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+.mobileOpen ul button {
+    width: 100px;
+    margin: 30px auto;
+    padding: 10px 0;
+    background-color: rgb(8,25,74);
+    color: #fff;
+    border: 1px solid white;
+}
+.mobileOpen ul .logo {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    margin-bottom: 45px;
+}
+.mobileOpen ul .logo img {
+    width: 100%;
+}
+.mobileOpen ul .logo .exit {
+    font-size: 15px;
+    margin-top: -40px;
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+.red {
+    width: 100%;
+    transition: width .6s ease-in-out;
+}
+.active {
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .upper .left {
+        width: 60%;
+        font-size: 10px;
+    }
+    .schedule {
+        display: none;
+    }
+    .name {
+        margin-left: 80px;
+    }
+    .lower .icon img{
+        width: 140px;
+    }
+    .right {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .mobileOpen { 
+        width: 90%;
+    }
+    .mobileOpen .inactive{
+        width: 0vw;
+        transition: width 2s ease-in-out;
+    }
+    .mobileOpen .active {
+        width: 56vw;
+    }
+    .mobileOpen ul {
+        /* margin-left: -10px; */
+    }
+}

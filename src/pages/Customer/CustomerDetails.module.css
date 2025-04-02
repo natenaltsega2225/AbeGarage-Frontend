@@ -1,0 +1,264 @@
+.CustomerDetails {
+  margin: 70px;
+}
+.container {
+    border-left: 1.5px solid #e0e0e0;
+}
+.customerInfo , .vehicleInfo, .serviceInfo {
+    position: relative;
+    /* margin-left: 100px; */
+    padding-left: 100px;
+    padding-bottom: 50px;
+}
+.text {
+    position: absolute;
+    left: -30px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(238,13,21);
+    color: #fff;
+    top: 0;
+}
+.text:nth-child(3){
+    top: unset;
+    bottom: 0;
+}
+
+.container h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(8,25,74);
+    margin-bottom: 15px;
+}
+.container p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+.container p span {
+    color: rgb(134, 137, 141);
+    font-size: 12px;
+}
+.container p .edit {
+    color: rgb(238,13,21);
+    font-size: 15px;
+    cursor: pointer;
+}
+.addVehicle button {
+    padding: 10px 15px ;
+    background-color: rgb(238,13,21);
+    color: #fff;
+    border: none;
+    font-size: 12px;
+}
+
+.vehicleList {
+    min-height: 50px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    margin: 20px 0;
+    padding: 15px;
+}
+.vehicleList p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: rgb(134, 137, 141);
+}
+.serviceInfo p {
+    font-weight: unset;
+    color: rgb(134, 137, 141);
+}
+.header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.line {
+    width: 30px;
+    height: 2px;
+    background-color: rgb(238,13,21);
+    margin-top: -5px;
+}
+.header h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(8,25,74);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.vehicleList table {
+    width: 100%;
+    /* border: 1px solid rgba(136, 137, 141, 0.47); */
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+.vehicleList table thead tr th {
+    /* all: unset; */
+    padding: 10px;
+    border: 1px solid rgba(136, 137, 141, 0.47);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.vehicleList tbody tr td {
+    /* all: unset; */
+    padding: 10px;
+    border: 1px solid rgba(136, 137, 141, 0.47);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 790px){
+    .CustomerDetails {
+        margin: 60px;
+      }
+}
+
+@media (max-width: 500px){
+    .CustomerDetails {
+        margin: 40px;
+      }
+
+    .text {
+        height: 40px;
+        width: 40px;
+        font-size: 12px;
+    }
+
+    .customerInfo , .vehicleInfo, .serviceInfo {
+        padding-left: 30px;
+        padding-bottom: 45px;
+    }
+
+    .container h1 {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .container p {
+        font-size: 9px;
+    }
+    .container p span {
+        font-size: 10px;
+    }
+    .container p .edit {
+        font-size: 11px;
+    }
+    .addVehicle button {
+        padding: 8px 10px ;
+        font-size: 9px;
+    }
+
+    .vehicleList table thead tr th {
+        padding: 5px;
+        font-size: 10px;
+    
+    }
+    .vehicleList tbody tr td {
+        padding: 5px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 400px){
+    .CustomerDetails {
+        margin: 35px;
+      }
+
+    .text {
+        left: -17px;
+        height: 30px;
+        width: 30px;
+        font-size: 10px;
+    }
+
+    .customerInfo , .vehicleInfo, .serviceInfo {
+        padding-left: 25px;
+    }
+
+    .container h1 {
+        font-size: 12px;
+    }
+    .container p {
+        font-size: 7px;
+    }
+    .container p span {
+        font-size: 8px;
+    }
+    .container p .edit {
+        font-size: 9px;
+    }
+    .addVehicle button {
+        padding: 7px 8px ;
+        font-size: 7px;
+    }
+
+    .vehicleList table thead tr th {
+        padding: 4px;
+        font-size: 9px;
+    
+    }
+    .vehicleList tbody tr td {
+        padding: 4px;
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 370px){
+    .CustomerDetails {
+        margin: 30px;
+      }
+
+    .customerInfo , .vehicleInfo, .serviceInfo {
+        padding-left: 22px;
+    }
+
+
+    .vehicleList table thead tr th {
+        padding: 4px;
+        font-size: 8px;
+    
+    }
+    .vehicleList tbody tr td {
+        padding: 4px;
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 350px){
+    .CustomerDetails {
+        margin: 20px;
+      }
+
+    .text {
+        height: 25px;
+        width: 25px;
+        font-size: 8px;
+    }
+
+    .customerInfo , .vehicleInfo, .serviceInfo {
+        padding-left: 17px;
+    }
+
+    .container h1 {
+        font-size: 9px;
+    }
+    .container p {
+        font-size: 6px;
+    }
+
+
+    .vehicleList table thead tr th {
+        padding: 3px;
+        font-size: 7.5px;
+    
+    }
+    .vehicleList tbody tr td {
+        padding: 3px;
+        font-size: 7.5px;
+    }
+}
